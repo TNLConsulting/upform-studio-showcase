@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const plans = [
   { sessions: "1", price: "22", per: "sessie", label: "Eén sessie" },
-  { sessions: "5", price: "100", per: "€20/sessie", label: "5 beurtenkaart", popular: false },
+  { sessions: "5", price: "100", per: "€20/sessie", label: "5 beurtenkaart" },
   { sessions: "10", price: "180", per: "€18/sessie", label: "10 beurtenkaart", popular: true },
   { sessions: "25", price: "425", per: "€17/sessie", label: "25 beurtenkaart" },
 ];
@@ -76,8 +76,7 @@ const PricingSection = () => {
           transition={{ delay: 0.6 }}
           className="text-center mt-12 font-sans-body text-sm text-muted-foreground"
         >
-          Na aankoop ontvang je een mail met instructies om je lessen in te boeken via{" "}
-          <span className="text-primary">Sportbit</span>.
+          Na aankoop ontvang je een mail met instructies om je lessen in te boeken.
         </motion.p>
       </div>
     </section>

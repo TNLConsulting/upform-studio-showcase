@@ -1,20 +1,19 @@
 import { motion } from "framer-motion";
-import pilatesAction from "@/assets/pilates-action.jpg";
 
 const classes = [
   {
     title: "Basic",
     subtitle: "Alle niveaus",
     description:
-      "Focus op het leren kennen van de machine en de basisoefeningen. Ook voor diegene die al enige ervaring hebben — optimaliseer je basisoefeningen of krijg opties naar moeilijkere varianten.",
-    features: ["Kennismaking met de reformer", "Basisoefeningen", "Opties naar moeilijker niveau", "Max. 8 personen"],
+      "Focus op het leren kennen van de reformer en de basisoefeningen. Ook geschikt voor wie al ervaring heeft — optimaliseer je techniek of krijg opties naar moeilijkere varianten.",
+    features: ["Kennismaking met de reformer", "Basisoefeningen & techniek", "Opties naar hoger niveau", "Max. 8 personen"],
   },
   {
     title: "Intermediate",
     subtitle: "Ervaren",
     description:
-      "Je hebt al ervaring met de machine en basisoefeningen, waardoor we een stap verder kunnen gaan in de oefeningen met optie tot geavanceerde opties.",
-    features: ["Geavanceerde oefeningen", "Meer uitdaging", "Persoonlijke opties", "Max. 8 personen"],
+      "Je bent vertrouwd met de reformer en basisoefeningen. We gaan een stap verder met geavanceerde oefeningen en uitdagendere varianten.",
+    features: ["Geavanceerde oefeningen", "Meer uitdaging & intensiteit", "Persoonlijke varianten", "Max. 8 personen"],
   },
 ];
 
@@ -38,7 +37,7 @@ const ClassesSection = () => {
           <div className="w-16 h-px line-gold mx-auto" />
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
           {classes.map((cls, i) => (
             <motion.div
               key={cls.title}
@@ -76,38 +75,33 @@ const ClassesSection = () => {
               </a>
             </motion.div>
           ))}
-
-          {/* Image card */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="relative overflow-hidden"
-          >
-            <img
-              src={pilatesAction}
-              alt="Reformer pilates in actie"
-              className="w-full h-full object-cover"
-              loading="lazy"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-8">
-              <p className="font-sans-body text-xs tracking-[0.3em] uppercase text-primary mb-2">
-                Privé lessen
-              </p>
-              <h3 className="font-serif-display text-2xl font-light text-foreground mb-3">
-                Solo, Duo of Trio
-              </h3>
-              <p className="font-sans-body text-sm text-muted-foreground">
-                Interesse? Stuur een mail naar{" "}
-                <a href="mailto:info@uprise.be" className="text-primary hover:underline">
-                  info@uprise.be
-                </a>
-              </p>
-            </div>
-          </motion.div>
         </div>
+
+        {/* Private lessons callout */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="max-w-4xl mx-auto bg-gradient-card border border-gold p-8 md:p-10 text-center"
+        >
+          <p className="font-sans-body text-xs tracking-[0.3em] uppercase text-primary mb-3">
+            Op maat
+          </p>
+          <h3 className="font-serif-display text-2xl md:text-3xl font-light text-foreground mb-4">
+            Privé Lessen — Solo, Duo of Trio
+          </h3>
+          <p className="font-sans-body text-sm text-muted-foreground mb-6 max-w-lg mx-auto">
+            Wil je liever een volledig gepersonaliseerde sessie? Of een privé groepsles? 
+            Neem contact met ons op en we plannen het samen in.
+          </p>
+          <a
+            href="mailto:info@upformstudio.be"
+            className="inline-block px-8 py-3 border border-primary text-primary font-sans-body text-sm tracking-[0.15em] uppercase hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+          >
+            Contacteer Ons
+          </a>
+        </motion.div>
       </div>
     </section>
   );
