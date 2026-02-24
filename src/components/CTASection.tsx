@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
-import heroImage from "@/assets/hero-studio.jpg";
+import studioPhoto from "@/assets/studio-photo.jpg";
 
 const CTASection = () => {
   return (
     <section className="relative py-32 md:py-40 overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src={heroImage}
-          alt="Upform Studio achtergrond"
+          src={studioPhoto}
+          alt="Upform Studio sfeerbeeld"
           className="w-full h-full object-cover"
           loading="lazy"
         />
@@ -29,8 +29,8 @@ const CTASection = () => {
           </h2>
           <div className="w-16 h-px line-gold mx-auto mb-8" />
           <p className="font-sans-body text-muted-foreground max-w-lg mx-auto mb-10 leading-relaxed">
-            Registreer je via Sportbit, koop je beurtenkaart en boek je eerste reformer pilates sessie. 
-            We kijken ernaar uit je te verwelkomen!
+            Registreer je, koop je beurtenkaart en boek je eerste reformer pilates sessie. 
+            We kijken ernaar uit je te verwelkomen bij Upform Studio!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

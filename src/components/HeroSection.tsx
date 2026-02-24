@@ -1,18 +1,18 @@
 import { motion } from "framer-motion";
-import heroImage from "@/assets/hero-studio.jpg";
+import studioPhoto from "@/assets/studio-photo.jpg";
 
 const HeroSection = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background image */}
+      {/* Background — actual studio photo */}
       <div className="absolute inset-0">
         <img
-          src={heroImage}
-          alt="Upform Studio reformer pilates studio met warme sfeerverlichting"
+          src={studioPhoto}
+          alt="Upform Studio — reformer pilates studio interieur"
           className="w-full h-full object-cover"
           loading="eager"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/30 to-background" />
       </div>
 
       {/* Content */}
@@ -23,7 +23,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="font-sans-body text-sm tracking-[0.3em] uppercase text-primary mb-6"
         >
-          Reformer Pilates bij Uprise
+          Exclusieve Reformer Pilates
         </motion.p>
 
         <motion.h1
@@ -50,7 +50,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 1 }}
           className="font-sans-body text-lg md:text-xl text-muted-foreground max-w-xl mx-auto mb-10 font-light"
         >
-          Daag je lichaam uit en verleg je grenzen in onze exclusieve reformer pilates studio.
+          Daag je lichaam uit en verleg je grenzen in onze intieme, luxueuze reformer pilates studio.
         </motion.p>
 
         <motion.div

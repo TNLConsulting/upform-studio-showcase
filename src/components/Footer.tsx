@@ -1,4 +1,4 @@
-import { Instagram, Facebook, Mail } from "lucide-react";
+import { Instagram, Facebook, Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -11,22 +11,13 @@ const Footer = () => {
               UPFORM
             </h3>
             <p className="font-sans-body text-sm text-muted-foreground leading-relaxed mb-4">
-              Reformer Pilates bij Uprise.
+              Exclusieve reformer pilates studio.
               <br />
-              We rise by lifting others.
+              Waar kracht elegantie ontmoet.
             </p>
             <div className="flex gap-4">
               <a
-                href="https://www.facebook.com/Uprise.be"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook size={20} />
-              </a>
-              <a
-                href="https://www.instagram.com/uprise.be/"
+                href="https://www.instagram.com/upformstudio/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -35,7 +26,16 @@ const Footer = () => {
                 <Instagram size={20} />
               </a>
               <a
-                href="mailto:info@uprise.be"
+                href="https://www.facebook.com/upformstudio"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook size={20} />
+              </a>
+              <a
+                href="mailto:info@upformstudio.be"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Email"
               >
@@ -50,26 +50,21 @@ const Footer = () => {
               Navigatie
             </h4>
             <ul className="space-y-3">
-              {["Over Ons", "Lessen", "Uurrooster", "Prijzen"].map((link) => (
-                <li key={link}>
+              {[
+                { label: "Over Ons", href: "#about" },
+                { label: "Lessen", href: "#classes" },
+                { label: "Uurrooster", href: "#schedule" },
+                { label: "Prijzen", href: "#pricing" },
+              ].map((link) => (
+                <li key={link.label}>
                   <a
-                    href={`#${link.toLowerCase().replace(/\s/g, "")}`}
+                    href={link.href}
                     className="font-sans-body text-sm text-muted-foreground hover:text-primary transition-colors"
                   >
-                    {link}
+                    {link.label}
                   </a>
                 </li>
               ))}
-              <li>
-                <a
-                  href="https://www.uprise.be"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-sans-body text-sm text-muted-foreground hover:text-primary transition-colors"
-                >
-                  Uprise.be
-                </a>
-              </li>
             </ul>
           </div>
 
@@ -80,19 +75,13 @@ const Footer = () => {
             </h4>
             <ul className="space-y-3 font-sans-body text-sm text-muted-foreground">
               <li>
-                <a href="mailto:info@uprise.be" className="hover:text-primary transition-colors">
-                  info@uprise.be
+                <a href="mailto:info@upformstudio.be" className="hover:text-primary transition-colors">
+                  info@upformstudio.be
                 </a>
               </li>
-              <li>
-                <a
-                  href="https://www.uprise.be"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-primary transition-colors"
-                >
-                  www.uprise.be
-                </a>
+              <li className="flex items-start gap-2">
+                <MapPin size={16} className="mt-0.5 text-primary flex-shrink-0" />
+                <span>België</span>
               </li>
             </ul>
           </div>
@@ -101,7 +90,7 @@ const Footer = () => {
         <div className="w-full h-px line-gold mb-8" />
 
         <p className="text-center font-sans-body text-xs text-muted-foreground tracking-wider">
-          © {new Date().getFullYear()} Upform Studio — Reformer Pilates bij Uprise. Alle rechten voorbehouden.
+          © {new Date().getFullYear()} Upform Studio. Alle rechten voorbehouden.
         </p>
       </div>
     </footer>
