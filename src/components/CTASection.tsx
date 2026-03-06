@@ -42,14 +42,6 @@ const CTASection = () => {
             >
               Registreer & Boek
             </a>
-            <a
-              href="https://uprise.sportbitapp.nl/cbm/proeflesplanner/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-10 py-4 border border-primary/30 text-foreground font-sans-body text-sm tracking-[0.2em] uppercase hover:border-primary hover:text-primary transition-all duration-300"
-            >
-              Gratis Proefles
-            </a>
           </div>
         </motion.div>
       </div>
