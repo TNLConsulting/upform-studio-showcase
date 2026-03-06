@@ -70,6 +70,12 @@ export default {
         serif: ["Cormorant Garamond", "serif"],
         sans: ["Outfit", "sans-serif"],
       },
+      fontSize: {
+        xs: ["0.8rem", { lineHeight: "1.5" }],
+        sm: ["0.9rem", { lineHeight: "1.6" }],
+        base: ["1rem", { lineHeight: "1.7" }],
+        lg: ["1.125rem", { lineHeight: "1.7" }],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
