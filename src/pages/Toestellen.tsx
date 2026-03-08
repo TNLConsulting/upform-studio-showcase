@@ -4,15 +4,15 @@ import Footer from "@/components/Footer";
 import { ArrowRight, Check } from "lucide-react";
 
 const reformerImages = [
-  "https://upform.be/wp-content/uploads/2025/08/DSCF8585.jpg",
-  "https://upform.be/wp-content/uploads/2025/08/DSCF8567.jpg",
-  "https://upform.be/wp-content/uploads/2025/08/DSCF8566.jpg",
-  "https://upform.be/wp-content/uploads/2025/08/DSCF8564.jpg",
-  "https://upform.be/wp-content/uploads/2025/08/DSCF8569.jpg",
-  "https://upform.be/wp-content/uploads/2025/08/DSCF8582.jpg",
-  "https://upform.be/wp-content/uploads/2025/08/DSCF8581.jpg",
-  "https://upform.be/wp-content/uploads/2025/08/DSCF8577.jpg",
-  "https://upform.be/wp-content/uploads/2025/08/DSCF8573.jpg",
+  "/images/DSCF8585.jpg",
+  "/images/DSCF8567.jpg",
+  "/images/DSCF8566.jpg",
+  "/images/DSCF8564.jpg",
+  "/images/DSCF8569.jpg",
+  "/images/DSCF8582.jpg",
+  "/images/DSCF8581.jpg",
+  "/images/DSCF8577.jpg",
+  "/images/DSCF8573.jpg",
 ];
 
 const features = [
@@ -33,7 +33,7 @@ const Toestellen = () => {
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0">
           <img
-            src="https://upform.be/wp-content/uploads/2025/08/DSCF8581.jpg"
+            src="/images/DSCF8581.jpg"
             alt="Upform Reformer — premium pilates toestel"
             className="w-full h-full object-cover"
             style={{ imageOrientation: "from-image" }}
@@ -124,7 +124,7 @@ const Toestellen = () => {
             >
               <div className="space-y-4">
                 <img
-                  src="https://upform.be/wp-content/uploads/2025/08/DSCF8585.jpg"
+                  src="/images/DSCF8585.jpg"
                   alt="Upform Reformer detail"
                   className="w-full aspect-[3/4] object-cover"
                   style={{ imageOrientation: "from-image" }}
@@ -133,7 +133,7 @@ const Toestellen = () => {
               </div>
               <div className="pt-8 space-y-4">
                 <img
-                  src="https://upform.be/wp-content/uploads/2025/08/DSCF8567.jpg"
+                  src="/images/DSCF8567.jpg"
                   alt="Upform Reformer in gebruik"
                   className="w-full aspect-[3/4] object-cover"
                   style={{ imageOrientation: "from-image" }}
@@ -221,7 +221,7 @@ const Toestellen = () => {
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://upform.be/wp-content/uploads/2025/08/DSCF8476.jpg"
+            src="/images/DSCF8476.jpg"
             alt="Upform Studio sfeerbeeld"
             className="w-full h-full object-cover"
             style={{ imageOrientation: "from-image" }}
