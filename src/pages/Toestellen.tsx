@@ -34,7 +34,7 @@ const Toestellen = () => {
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0">
           <img
-            src="/images/reformer-01.jpg"
+            src="/images/reformer-05.jpg"
             alt="Upform Reformer — premium pilates toestel"
             className="w-full h-full object-cover"
             style={{ imageOrientation: "from-image" }}
